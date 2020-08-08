@@ -1,0 +1,108 @@
+html,body,h1,h2,h3,h4,h5,h6,p,div,section,main,footer,span,input,form,button{
+ margin: 0;
+ padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(-45deg,#490f60,#8e44ad);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.background-logo{
+  font-size: 20rem;
+  color: #341242b3;
+  position: absolute;
+  top: -35px;
+  left: 50px;
+  z-index: -1;
+}
+
+.input-box{
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-text{
+  font-family: Dosis,sans-serif;
+  color: #f2f2f2;
+  font-size: 2.5rem;
+}
+
+.form-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 3rem;
+}
+
+.text-box,.submit{
+  border: 0;
+  padding: .3rem;
+  font-size: 1.5rem;
+  outline: 0;
+}
+
+.text-box{
+  min-width: 250px;
+  padding-left: .4rem ;
+  background-color: #f2f2f2;
+}
+
+.text-box:focus{
+  background-color: #fff;
+}
+
+.submit{
+  padding-left: .7rem;
+  padding-right: .7rem;
+  background-color: #ad3fdc;
+  color: #fff;
+
+  transition: background-color 300ms ease-out;
+}
+
+.submit:hover{
+  background-color: #2ecc71;
+}
+
+.bookmark-container{
+  padding-top: 5rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.bookmark{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: .5rem;
+  margin: 2rem 1.5rem;
+  background-color: #341242b3;
+  color: #f2f2f2;
+}
+
+.bookmark-header{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: .3rem;
+  font-family: Dosis,sans-serif;
+  font-weight: 600;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.bookmark-logo{
+  border-radius: 50%;
+  padding-top: .5rem;
+}
+
