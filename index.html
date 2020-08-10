@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <!-- GOOGLE FONTS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap"
@@ -17,83 +18,37 @@
     <div class="input-box">
       <h1 class="title-text">My Bookmark App</h1>
       <form class="form-input">
-        <input type="text" class="text-box" placeholder="https://example.com" />
+        <input
+          type="text"
+          class="text-box"
+          placeholder="https://www.example.com"
+        />
         <button class="submit"><i class="far fa-bookmark"></i></button>
+        <span class="question-circle">
+          <i class="far fa-question-circle"></i>
+        </span>
       </form>
+      <div class="process-info"></div>
     </div>
 
-    <div class="bookmark-container">
-      <div class="bookmark">
-        <div class="bookmark-header">
-          <span>Spotify</span> <i class="fas fa-trash-alt"></i>
-        </div>
-        <img class="bookmark-logo" src="//logo.clearbit.com/twitter.com?size=120" />
-      </div>
+    <!-- This section contains bookmarks -->
+    <div class="bookmark-container" class="bookmark-container"></div>
 
-      <div class="bookmark">
-        <div class="bookmark-header">
-          <span>Spotify</span> <i class="fas fa-trash-alt"></i>
-        </div>
-        <img class="bookmark-logo" src="//logo.clearbit.com/github.com?size=120" />
-      </div>
-
-      <div class="bookmark">
-        <div class="bookmark-header">
-          <span>Spotify</span> <i class="fas fa-trash-alt"></i>
-        </div>
-      <a href="#">
-        <img class="bookmark-logo" src="//logo.clearbit.com/youtube.com?size=120" />
-      </a>
-      </div>
-
-      <!-- <div class="bookmark">
-        <div class="bookmark-header">
-          <span>Spotify</span> <i class="fas fa-trash-alt"></i>
-        </div>
-        <img class="bookmark-logo" src="//logo.clearbit.com/reddit.com?size=120" />
-      </div>
-
-      <div class="bookmark">
-        <div class="bookmark-header">
-          <span>Spotify</span> <i class="fas fa-trash-alt"></i>
-        </div>
-        <img class="bookmark-logo" src="//logo.clearbit.com/twitter.com?size=120" />
-      </div>
-
-      <div class="bookmark">
-        <div class="bookmark-header">
-          <span>Spotify</span> <i class="fas fa-trash-alt"></i>
-        </div>
-        <img class="bookmark-logo" src="//logo.clearbit.com/twitter.com?size=120" />
-      </div>
-
-      <div class="bookmark">
-        <div class="bookmark-header">
-          <span>Spotify</span> <i class="fas fa-trash-alt"></i>
-        </div>
-        <img class="bookmark-logo" src="//logo.clearbit.com/twitter.com?size=120" />
-      </div>
-
-      <div class="bookmark">
-        <div class="bookmark-header">
-          <span>Spotify</span> <i class="fas fa-trash-alt"></i>
-        </div>
-        <img class="bookmark-logo" src="//logo.clearbit.com/twitter.com?size=120" />
-      </div>
-      <div class="bookmark">
-        <div class="bookmark-header">
-          <span>Spotify</span> <i class="fas fa-trash-alt"></i>
-        </div>
-        <img class="bookmark-logo" src="//logo.clearbit.com/twitter.com?size=120" />
-      </div>
-      <div class="bookmark">
-        <div class="bookmark-header">
-          <span>Spotify</span> <i class="fas fa-trash-alt"></i>
-        </div>
-        <img class="bookmark-logo" src="//logo.clearbit.com/twitter.com?size=120" />
-      </div> -->
+    <div class="footer">
+      <p>
+        Made with <i class="fas fa-heart heart"></i> by
+        <a class="site-link" href="https://shaharafat.info/">Shah Arafat</a>
+      </p>
+      <a href="https://clearbit.com">Logos provided by Clearbit</a>
     </div>
 
+    <!-- Notification -->
+    <div class="hint-notification">
+      <p>
+        URL structure must follow the syntax: "http://www.example.com/" <br />
+        or "https://www.example.com"
+      </p>
+    </div>
     <!-- FONT-AWESOME -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
     <!-- SCRIPT -->

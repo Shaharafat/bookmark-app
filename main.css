@@ -10,7 +10,7 @@ body{
 
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: flex-start; 
   align-items: center;
 }
 
@@ -24,7 +24,7 @@ body{
 }
 
 .input-box{
-  padding-top: 5rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +42,7 @@ body{
   justify-content: center;
   align-items: center;
 
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .text-box,.submit{
@@ -67,6 +67,7 @@ body{
   padding-right: .7rem;
   background-color: #ad3fdc;
   color: #fff;
+  cursor: pointer;
 
   transition: background-color 300ms ease-out;
 }
@@ -75,6 +76,56 @@ body{
   background-color: #2ecc71;
 }
 
+.question-circle{
+  color: #fff;
+  margin-left: .5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.hint-notification{
+  font-family: sans-serif;
+  background: #000;
+  color: #fff;
+  width: 180px;
+  font-size: .7rem;
+  padding: .5rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 0px 0px 8px rgba(155, 155, 155, 0.8) ;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+
+
+
+.hint-notification::after{
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  /* background-color: red; */
+  border: 12px solid transparent;
+  border-bottom: 12px  solid black;
+  position: absolute;
+  top: -23px;
+  left: 30px;
+}
+
+.process-info{
+  margin-top: 2rem;
+  padding: .5rem 1rem;
+  background-color: rgb(245, 114, 114);
+  border-radius: 8px;
+  font-family: sans-serif;
+  color:rgb(226, 41, 41) ;
+  border: 3px solid rgb(226, 41, 41);
+  opacity: 0;
+  transition: opacity 1s ease-out;
+
+}
 .bookmark-container{
   padding-top: 5rem;
   width: 80%;
@@ -98,7 +149,8 @@ body{
   padding-bottom: .3rem;
   font-family: Dosis,sans-serif;
   font-weight: 600;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f9eaff;
+  color: #f9eaff;
 }
 
 .bookmark-logo{
@@ -106,3 +158,45 @@ body{
   padding-top: .5rem;
 }
 
+.bookmark-header .trash:hover{
+  color: #c25fec;
+}
+
+/* footer */
+.footer{
+  margin-top: auto;
+  padding: .3rem 1rem;
+  background-color: rgb(8, 8, 86);
+  border-radius: 10px 10px 0px 0px;
+
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0px -3px 8px rgba(255,255,255,.2);
+  font-family: Dosis,sans-serif;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  font-size: .8rem;
+  letter-spacing: 1px;
+}
+
+.footer a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer p{
+  padding: 0 0 .3rem 0;
+}
+
+.heart{
+  color: rgb(243, 25, 25);
+  font-size: 1.2rem;
+}
+
+.site-link{
+  font-weight: 600;
+}
+.site-link:hover{
+  text-decoration: underline;
+}
