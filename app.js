@@ -79,7 +79,10 @@ function removeBookmark(event) {
   console.log(event.target);
   if (trash) {
     let bookmark = event.target.closest(".bookmark");
-    bookmark.remove();
+    bookmark.classList.add('remove');
+    setTimeout(function () {
+      bookmark.style.display = 'none';
+    }, 900);
   }
 }
 

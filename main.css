@@ -162,6 +162,22 @@ body{
   color: #c25fec;
 }
 
+.remove{
+  animation: removeAnimation 700ms ease-out forwards;
+}
+
+@keyframes removeAnimation {
+  0%{
+    transform: scale(1);
+  }
+  20%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(0);
+  }
+
+}
 /* footer */
 .footer{
   margin-top: auto;
